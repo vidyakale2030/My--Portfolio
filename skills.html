@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<title>Skills</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+
+/* skills page */
+
+.skills{
+padding:80px 20px;
+text-align:center;
+}
+
+.skills h1{
+font-size:40px;
+margin-bottom:30px;
+border-radius:25px;
+background:linear-gradient(90deg,#043d56,#0ea5e9);
+color:white;
+padding:10px 20px;
+display:inline-block;
+}
+
+/* skill cards */
+
+.skills-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+margin-bottom:40px;
+}
+
+.skill-card{
+padding:12px 20px;
+background:linear-gradient(90deg,#043d56,#0ea5e9);
+color:white;
+border-radius:25px;
+font-weight:bold;
+transition:0.3s;
+}
+
+.skill-card:hover{
+transform:scale(1.1);
+background:#124762;
+}
+
+/* skill bars */
+
+.skill-bar{
+width:60%;
+margin:auto;
+text-align:left;
+}
+
+.skill-bar p{
+margin:12px 0 5px;
+font-weight:bold;
+}
+
+/* bar background */
+
+.bar{
+width:100%;
+background:#ddd;
+border-radius:20px;
+overflow:hidden;
+}
+
+/* progress bar */
+
+.progress{
+height:20px;
+background:#19b471;
+color:white;
+display:flex;
+align-items:center;
+justify-content:flex-end; /* THIS moves % to right */
+padding-right:10px;
+border-radius:20px;
+animation:fill 2s ease-in-out;
+}
+
+/* skill levels */
+
+.java{width:90%;}
+.html{width:85%;}
+.css{width:80%;}
+.js{width:75%;}
+.sql{width:85%;}
+.vscode{width:90%;}
+.intellij{width:70%;}
+.postgresql{width:80%;}
+.git{width:90%;}
+.github{width:90%;}
+.problem{width:85%;}
+.responsive{width:80%;}
+
+/* animation */
+
+@keyframes fill{
+from{width:0;}
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav class="navbar">
+<h2>Vidya</h2>
+
+<div>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="skills.html">Skills</a>
+<a href="Projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
+</nav>
+
+<section class="skills">
+
+<h1>My Skills</h1>
+
+<!-- Skill Cards -->
+
+<div class="skills-container">
+<div class="skill-card">Java</div>
+<div class="skill-card">HTML</div>
+<div class="skill-card">CSS</div>
+<div class="skill-card">JavaScript</div>
+<div class="skill-card">SQL</div>
+<div class="skill-card">PostgreSQL</div>
+<div class="skill-card">Git</div>
+<div class="skill-card">GitHub</div>
+<div class="skill-card">VS Code</div>
+<div class="skill-card">IntelliJ IDEA</div>
+<div class="skill-card">Problem Solving</div>
+<div class="skill-card">Responsive Design</div>
+</div>
+
+<!-- Skill Bars -->
+
+<div class="skill-bar">
+
+<p>Java</p>
+<div class="bar"><div class="progress java">70%</div></div>
+
+<p>HTML</p>
+<div class="bar"><div class="progress html">85%</div></div>
+
+<p>CSS</p>
+<div class="bar"><div class="progress css">80%</div></div>
+
+<p>JavaScript</p>
+<div class="bar"><div class="progress js">75%</div></div>
+
+<p>SQL</p>
+<div class="bar"><div class="progress sql">85%</div></div>
+
+<p>VS Code</p>
+<div class="bar"><div class="progress vscode">90%</div></div>
+
+<p>IntelliJ IDEA</p>
+<div class="bar"><div class="progress intellij">70%</div></div>
+
+<p>PostgreSQL</p>
+<div class="bar"><div class="progress postgresql">80%</div></div>
+
+<p>Git</p>
+<div class="bar"><div class="progress git">90%</div></div>
+
+<p>GitHub</p>
+<div class="bar"><div class="progress github">50%</div></div>
+
+<p>Problem Solving</p>
+<div class="bar"><div class="progress problem">85%</div></div>
+
+<p>Responsive Design</p>
+<div class="bar"><div class="progress responsive">80%</div></div>
+
+</div>
+
+</section>
+
+</body>
+</html>
